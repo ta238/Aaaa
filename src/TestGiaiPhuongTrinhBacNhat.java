@@ -9,9 +9,9 @@ public class TestGiaiPhuongTrinhBacNhat {
 
             PhuongTrinhBacNhat s = new PhuongTrinhBacNhat();
 
-                s.nhapThongTin();
-                s.hienThiThongTin();
-            }
-
+            s.nhapThongTin();
+            s.hienThiThongTin();
         }
+
     }
+}
