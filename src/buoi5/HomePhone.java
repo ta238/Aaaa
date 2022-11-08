@@ -9,9 +9,11 @@ public class HomePhone extends Phone {
     public HomePhone(String name, double prince, String manufacturer) {
         super(name, prince, manufacturer);
     }
-public HomePhone(){
 
-}
+    public HomePhone() {
+
+    }
+
     public int getLineLeght() {
         return lineLeght;
     }
@@ -22,17 +24,30 @@ public HomePhone(){
 
     @Override
     public void nhapThongTin() {
-        System.out.println("home phone");
-        super.nhapThongTin1();
+
+        System.out.println("name:");
+//        String name = scanner.nextLine();
+//        setName(name);
+        setName(scanner.nextLine());
+        System.out.println("price");
+        double prince = scanner.nextDouble();
+        setPrince(prince);
+        System.out.println("manufacturer:");
+//        String manufacturer = scanner.nextLine();
+//        setManufacturer(manufacturer);
+        setManufacturer(scanner.nextLine());
+        scanner.nextLine();
         System.out.println("lineleght:");
         this.lineLeght = scanner.nextInt();
+        scanner.nextLine();
     }
 
     @Override
     public void hienThiThongTin() {
-        System.out.println(getName());
-        System.out.println(getPrince());
-        System.out.println(getManufacturer());
-        System.out.println(lineLeght);
+        System.out.println("name" + getName());
+        System.out.println("prince" + getPrince());
+        System.out.println("manufacturer" + getManufacturer());
+        System.out.println("lineleght" + lineLeght);
     }
+
 }

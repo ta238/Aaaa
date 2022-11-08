@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MobiPhone extends Phone {
     String operatingSystem;
-
+    Scanner scanner = new Scanner(System.in);
     public MobiPhone(String name, double prince, String manufacturer) {
         super(name, prince, manufacturer);
     }
@@ -21,19 +21,26 @@ public MobiPhone(){
 
     @Override
     public void nhapThongTin() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("MoBiPhone");
-        super.nhapThongTin1();
+        System.out.println("name:");
+        String name=scanner.nextLine();
+        setName(name);
+        System.out.println("price");
+        double prince = scanner.nextDouble();
+        setPrince(prince);
+        System.out.println("manufacturer:");
+        String manufacturer = scanner.nextLine();
+        scanner.nextLine();
+        setManufacturer(manufacturer);
         System.out.println("nhap operatingSystem:");
-        this.operatingSystem = in.nextLine();
+        this.operatingSystem = scanner.nextLine();
 
     }
 
     @Override
     public void hienThiThongTin() {
-        System.out.println(getName());
-        System.out.println(getPrince());
-        System.out.println(getManufacturer());
-        System.out.println(operatingSystem);
+        System.out.println("name:"+getName());
+        System.out.println("price:"+getPrince());
+        System.out.println("mamufacturer"+getManufacturer());
+        System.out.println("operatingSystem"+operatingSystem);
     }
 }
