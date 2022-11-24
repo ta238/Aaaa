@@ -1,0 +1,34 @@
+{
+
+ "student": [
+   {
+     "age": 10,
+     "name": "A",
+     "address": "Nguyen Trai",
+     "xxx": [1,2,3]
+   },
+   {
+     "age": 20,
+     "name": "B",
+     "address": "Quang Trung",
+     "xxx": [3,3,3]
+   },
+   {
+     "age": 20,
+     "name": "B",
+     "address": "Quang Trung",
+     "xxx": [3,3,3]
+   },
+   {
+     "age": 10,
+     "name": "A",
+     "address": "Nguyen Trai",
+     "xxx": [1,2,3]
+   }
+ ]
+}
+
+
+
+
+

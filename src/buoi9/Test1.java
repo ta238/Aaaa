@@ -38,7 +38,15 @@ public class Test1 {
 
         }
         System.out.println("===TONG===" + sumTieuThu + "|" + sumtienNuoc + "|" + sumPhuPhi + "|" + sumPhaiTra + "|");
-
+        TienNuoc khTraNhieuNhat = list.stream().max((o1, o2) -> {
+            if (o1.tinhTienNuoc() < o2.tinhTienNuoc()) {
+                return -1;
+            } else if(o1.tinhTienNuoc() == o2.tinhTienNuoc()) {
+                return 0;
+            } else {
+                return 1;
+            }
+        }).get();
     }
 
 }
